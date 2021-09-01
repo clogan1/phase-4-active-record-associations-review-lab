@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# 10.times do
+#     Taxi.create
+# end
+
+# 10.times do
+#     Passenger.create
+# end
+
+20.times do
+    Ride.create(taxi_id: Taxi.ids.sample, passenger_id: Passenger.ids.sample)
+end
